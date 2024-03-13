@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view>
+<view class="container">
+    <view>
+        {{msg}}
+    </view>
+
+    <view>
+        <button bind:tap="getInfo" type="primary">获取用户信息</button>
+        {{nickName}}
+        <image style="height: 100px; width: 100px;" src="{{iconUrl}}"></image>
+        
+    </view>
+        
+    <view>
+        <button bind:tap="wxLoginFunction" type="warn"> 登錄 </button>
+        {{codes}}
+    </view>
+
+    <view>
+        <button bind:tap="sendRequest" type="default">發送請求</button>
+    </view>
+</view>
+</scroll-view>
